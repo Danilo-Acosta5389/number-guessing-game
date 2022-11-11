@@ -1,0 +1,24 @@
+/*---------------------- Number guessing game ----------------------------- */
+
+
+.mainThing.show
+{
+    display: none;
+}
+
+.winner {
+	display: none;
+}
+
+.winner.win {
+	display: block;
+}
+
+.loser {
+	display: none;
+}
+
+.loser.lose {
+    display: block;
+}
+

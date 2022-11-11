@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number guessing game</h1>
+    <h3>Guess what?</h3>
+    <div class="mainThing">
+        <p>Guess a number between 1 and 100. You have 5 attempts. <br>Good luck... </p>
+        <label for="guessField">Input number here: </label>
+        <input type="number" class="guessField" id="input">
+        <button class="button" onclick="userGuess()">Guess</button>
+        <h5>You guessed the number: <span class="yourGuess"></span></h5>
+        <h4 class="guesses">Guesses</h4>
+        <h3>Your attempts</h3>
+        <ul class="listAttempts"></ul>
+    </div>
+
+    <div class="winner">
+        <h2>Congratulations! You won!</h2>
+        <h3>You guessed the number: <span class="yourGuess" id="result"></span></h3>
+        <!-- <h3>Play again?</h3> -->
+        <button class="restartBtn" onclick="restartGame()">Restart</button>
+    </div>
+
+    <div class="loser">
+        <h2>Game over! You lose!</h2>
+        <h3>Play again?</h3>
+        <button class="restartBtn" onclick="restartGame()">restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
